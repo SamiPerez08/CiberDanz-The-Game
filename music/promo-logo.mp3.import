@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/promo-logo.mp3-c63efc0d25b7cfde21995b4a3b43b5bc.mp3str"
+
+[deps]
+
+source_file="res://music/promo-logo.mp3"
+dest_files=[ "res://.import/promo-logo.mp3-c63efc0d25b7cfde21995b4a3b43b5bc.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

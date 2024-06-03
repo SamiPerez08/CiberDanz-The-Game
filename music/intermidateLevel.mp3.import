@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/intermidateLevel.mp3-3d753f051fd036580192fe9706aff9c2.mp3str"
+
+[deps]
+
+source_file="res://music/intermidateLevel.mp3"
+dest_files=[ "res://.import/intermidateLevel.mp3-3d753f051fd036580192fe9706aff9c2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

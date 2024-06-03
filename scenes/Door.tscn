@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/img/pueerta1.png" type="Texture" id=1]
+
+[node name="Door" type="Area2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -2, -168 )
+scale = Vector2( 0.585714, 0.537143 )
+texture = ExtResource( 1 )

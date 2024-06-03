@@ -1,0 +1,82 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://assets/img/bac2.png" type="Texture" id=1]
+[ext_resource path="res://assets/img/danceFloor.png" type="Texture" id=2]
+[ext_resource path="res://level1.2/Sprites/game/road/road.png" type="Texture" id=3]
+[ext_resource path="res://level1.2/Sprites/game/arrow_button/left/arrow_button_left2.png" type="Texture" id=4]
+[ext_resource path="res://level1.2/Sprites/game/arrow_button/right/arrow_button_right2.png" type="Texture" id=5]
+[ext_resource path="res://level1.2/Sprites/game/arrow_button/up/arrow_button_up2.png" type="Texture" id=6]
+[ext_resource path="res://assets/img/dev.png" type="Texture" id=7]
+[ext_resource path="res://music/intermidateLevel.mp3" type="AudioStream" id=8]
+[ext_resource path="res://scenes/INtemidateLevelAudio.gd" type="Script" id=9]
+[ext_resource path="res://scenes/PlayerDancing.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/IntermidateLevel.gd" type="Script" id=11]
+[ext_resource path="res://assets/img/Presiona_esc-removebg-preview.png" type="Texture" id=12]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 236.282, 31.6649 )
+
+[node name="IntermidateLevel" type="Node2D"]
+script = ExtResource( 11 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 1043.0
+margin_bottom = 600.0
+
+[node name="Sprite" type="Sprite" parent="Panel"]
+position = Vector2( 520, 299.25 )
+scale = Vector2( 0.405469, 0.413542 )
+texture = ExtResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Panel"]
+
+[node name="Sprite" type="Sprite" parent="Panel/StaticBody2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 237, 412.5 )
+scale = Vector2( 0.696203, 0.915842 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/Sprite"]
+position = Vector2( -0.718109, 69.3351 )
+shape = SubResource( 1 )
+
+[node name="playGame" type="StaticBody2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="playGame"]
+position = Vector2( 774, 310 )
+scale = Vector2( 2.99167, 2.1 )
+texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="playGame"]
+position = Vector2( 657, 455 )
+scale = Vector2( 3.125, 2.5625 )
+texture = ExtResource( 4 )
+
+[node name="Sprite3" type="Sprite" parent="playGame"]
+position = Vector2( 897.75, 456 )
+scale = Vector2( 2.97917, 2.54167 )
+texture = ExtResource( 5 )
+
+[node name="Sprite4" type="Sprite" parent="playGame"]
+position = Vector2( 784, 456 )
+scale = Vector2( 2.66667, 2.58333 )
+texture = ExtResource( 6 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 10 )]
+position = Vector2( 236, 451 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 808, 557 )
+texture = ExtResource( 7 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 2, 0 )
+stream = ExtResource( 8 )
+script = ExtResource( 9 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 524, 83 )
+texture = ExtResource( 12 )

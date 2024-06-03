@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/soundGameLevel1.mp3-acfb606df0a708baef733ad2f0f48e1f.mp3str"
+
+[deps]
+
+source_file="res://music/soundGameLevel1.mp3"
+dest_files=[ "res://.import/soundGameLevel1.mp3-acfb606df0a708baef733ad2f0f48e1f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
